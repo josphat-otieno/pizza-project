@@ -1,0 +1,46 @@
+/* .landing-page{
+    background-image: url('/images/likemeat-CbNAuxSZTFo-unsplash.jpg');
+    background-cover:  */
+    .nav{
+        position: absolute;
+        bottom: 90%;
+         left: 27%;
+        transform: translate(-50% -50%);
+        color: white;
+        font-size: xx-large;
+        text-align: center; 
+    }
+    .centered{
+        position: absolute;
+        top: 40%;
+         left: 40%;
+        transform: translate(-50% -50%);
+        color: white;
+        font-size: xx-large;
+        text-align: center; 
+    }
+    .ordering{
+        background-color: aqua;
+    }
+    .contact{
+        background-color: yellow;
+        
+    }
+    .location{
+        margin-left: 20px;
+    }
+    /* body{
+        margin-left: 10px;
+        margin-right: 10px;
+    } */
+    .about{
+        background-color: gray;
+    }
+    .text{
+        font-size: x-large;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: ;
+    }
+    #par{
+        font-size: xx-large;
+    }

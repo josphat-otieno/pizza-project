@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>pizza app</title>
+</head>
+
+<body>
+    <div class="container-fluid pt-4">
+        <div class="landing-page">
+            <img src="images/ivan-torres-MQUqbmszGGM-unsplash (1).jpg" alt="profile image" width="100%" height="700px">
+            <div class="nav">
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#order">Order</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="centered"> WELCOME TO<br>JOSE INN PIZZA SHOP <BR> <span id="h3">eat what makes you happy</span>
+            </div><br><br>
+        </div><br><br>
+        <div class="about text-center">
+            <h1 id="about">About Us</h1>
+            <p id="par">Jose Inn Pizza Shop that has been in pizza business for over 10years now and offers a very unique
+                atmosphere for customers in addition to home delivery services for all pizza
+                orders and we know that pizza is a family meal which popular around the world and that has resulted in a
+                large number of chains of pizza restaurants but non of them is the best than Jose Inn Pizza Shop.</p>
+            <h2>Our Varieties</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="images">
+                        <img src="images/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Cheese-Stuffed Crust " width="300"
+                            height="300">
+                        <div class="text">Cheese-Stuffed Crust </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="images">
+                        <img src="images/foad-roshan-Y6OgisiGBjM-unsplash.jpg" alt="Pizza Bagels" width="300"
+                            height="300">
+                        <div class="text">Pizza Bagels </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="images">
+                        <img src="images/likemeat-CbNAuxSZTFo-unsplash.jpg" alt="Thin Crust" width="300" height="300">
+                        <div class="text">Thin Crust</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="images">
+                        <img src="images/Margherita-pizza-overhead.jpg" alt="Crispy" width="300" height="300">
+                        <div class="text">Crispy</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="images">
+                        <img src="images/Quattro-Formaggio-Four-Cheese-Pizza_1.jpg" alt="Glutten Free" width="300"
+                            height="300">
+                        <div class="text">Glutten Free </div>
+                    </div>
+                </div>
+            </div><br>
+            <h2>Toppings</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="images">
+                        <img src="images/Meatlovers-1.jpg" alt="" width="300" height="300">
+                        <div class="text">Peperoni</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="images">
+                        <img src="images/alan-hardman-SU1LFoeEUkk-unsplash (1).jpg" alt="Tomatoes" width="300"
+                            height="300">
+                        <div class="text">Tomatoes </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="images">
+                        <img src="images/Ham-and-Pineapple.jpg" alt="Ham-and-Pineapple" width="300" height="300">
+                        <div class="text">Ham and Pineapple</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ordering">
+                <h2 id="order" class="text text-center">Order Your Pizza</h2>
+                <p>Order your pizza here an we will deliver it to you at your door step</p>
+                <div class="row">
+                    <div class="col-md-5">
+                        <form id="frm">
+                            <div class="form-group">
+                                <label for="flavour">Pick your flavour</label>
+                                <select name="flavour" id="flavours" class="form-control">
+                                    <option value="vegtikka">Veg Tikka</option>
+                                    <option value="chickentikka">Chicken Tikka</option>
+                                    <option value="periperi">Peri-Peri Chicken</option>
+                                    <option value="bbq">BBQ Steak</option>
+                                    <option value="boerewors">Boerewors</option>
+                                    <option value="hawaiian">Hawaiian</option>
+                                    <option value="mushroom">Chicken and Mushroom</option>
+                                    <option value="regina">Regina Pizza</option>
+                                </select>
+                            </div><br>
+                            <div class="form-goup">
+                                <label for="size">Select the size of your favorite pizza</label>
+                                <select name="size" id="sizes" class="form-control">
+                                    <option value="small">Small @700</option>
+                                    <option value="medium">Medium @1000</option>
+                                    <option value="large">Large @1500</option>
+                                </select>
+                            </div><br>
+                            <div class="form-group">
+                                <label for="crust">Select the type of crust</label>
+                                <select name="crust" id="crust-pizza" class="form-control">
+                                    <option value="glutten free">Glutten Free @200</option>
+                                    <option value="thin crust">Thin Crust @300</option>
+                                    <option value="crispy">Crispy @350</option>
+                                    <option value="cheese-stuffed">Cheese-Stuffed crust @400</option>
+                                    <option value="pizza-bagels">Pizza Bagels @500</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h2>Select the toppings you would like at Sh.70 each</h2>
+                                <input type="checkbox" id="tomatoes" value="Tomatoes" name="tomatoes">
+                                <label for="tomatoes">Tomatoes</label> <br>
+                                <input type="checkbox" id="peperoni" value="Peperoni" name="peperoni">
+                                <label for="peperoni">Peperoni</label><br>
+                                <input type="checkbox" id="ham" value="Ham and Pineapple" name="ham">
+                                <label for="ham">Ham-and-Pineapple</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="qty">QTY</label>
+                                <input type="number" name="qty" value="1" min="1" max="10" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-success">Add to cart</button>
+                            <button type="submit" class="btn btn-warning">Proceed</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="information">
+                            <p>Your order will be processed and delivered to you shortly</p>
+                        </div>
+                        <div class="choice">
+                            <h2 id="choice">Your Order Is:</h2>
+                        </div>
+                        <table class="table table-sm text-small">
+
+                            <tr>
+                                <th>Pizza</th>
+                                <th>Size</th>
+                                <th>Crust</th>
+                                <th>Topping</th>
+                                <th>quantity</th>
+                                <th>Total</th>
+                            </tr>
+                            <tbody id="our-order">
+
+                            </tbody>
+                            <tfoot class="text-right">
+                                <td colspan="6"></td>
+                            </tfoot>
+                        </table>
+                        <p id="addedprice">Delivery will cost is sh. 150</p>
+                        <p id="finallmessage"></p>
+                        <button class="btn btn-primary" id="checkout">Checkout</button>
+                        <button class="btn btn-primary">Home delivery?</button><br><br>
+                        <div class="delivery">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Name"><br>
+                                    <input type="number" id="pnumber" class="form-control" placeholder="07xxxxxxxx"><br>
+                                    <input type="text" id="home" class="form-control" placeholder="Home address"><br>
+                                    <button type="submit" class="btn btn-warning">Place Order</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h1 id="contac" class="text text-center">Contact Us</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="location">
+                    <h2>LOCATION</h2> 
+                    <P>JAVA HOUSE 3RD FLOOR</P>
+                    <P>KIMATHI STREET</P>
+                    <p>NAIROBI</p>
+                </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <h2>Reach us on:</h2>
+                    <p>Tel: +25471787881</p>
+                    <p>Email Address: <em>joseinn@gmail.com</em></p>
+                </div>
+            </div>
+            <footer>
+                <h3 class="text text-center">@ 2021 Jose Inn Pizza</h3>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
