@@ -48,9 +48,34 @@ $(document).ready(function(){
             crispy: 350,
             cheese: 400,
             bagels:500
-        }
-            
-        
-
+        }; 
+        function calculatePrice(size){
+            if(size=="small"){
+                return sizePrice.small;
+            }else if(size=="medium"){
+                return sizePrice.medium;
+            }else{
+                return sizePrice.large
+            }
+        } 
+        function crustCalcPrice(crust){
+            if (crust=="glutten"){
+                return crustPrice.glutten;
+            }else if(crust=="thin"){
+                return crustPrice.thin
+            }
+            else  if(crust==crispy){
+                return crustPrice.crispy;
+            }else if(crust==cheese){
+                return crustPrice.cheese;
+            }else{
+                return crustPrice.bagels;
+            }
+        } 
     })
+    var crust = $("#crustPizza").val();
+    var toppings =$("#toppings").val();
+    var flavors = $("#flavors").val();
+    
+
 })
