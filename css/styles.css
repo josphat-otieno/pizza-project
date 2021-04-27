@@ -44,7 +44,7 @@
     #par{
         font-size: xx-large;
     }
-    #ptable, #deliveryPrice, #information{
+    #ptable, #deliveryPrice, #information, #form{
         display: none;
     }
 
