@@ -25,6 +25,7 @@ function pizza(flavor, size, crust, topping, quantity, total) {
     this.toppping = topping;
     this.quantity = quantity;;
     this.total = total;
+    this.pizzaToppings=[]
 }
 
 function Total(sizePrice, quantity, delivery, crustPrice, toppingPrice, ) {
@@ -54,7 +55,7 @@ $(document).ready(function () {
             break;
         case "large":
             price = 1500;
-            //    console.log(price);
+        
             break;
         case "medium":
             price = 1000;
@@ -62,7 +63,7 @@ $(document).ready(function () {
             break;
         case "small":
             price = 700;
-            //    console.log(price);
+        
         default:
             console.log("error");
     }
@@ -87,8 +88,8 @@ $(document).ready(function () {
         default:
             console.log("No price");
     }
-    let toppingPrice = pizzaToppings.length * 70;
-    console.log("topping price" + toppingPrice);
+    // let toppingPrice = pizzaToppings.length * 70;
+    // console.log("topping price" + toppingPrice);
     if ((pizzaSize == "") && (pizzaCrust == "")) {
         alert("nothing selected");
         $("button#make").show();
@@ -108,7 +109,7 @@ $(document).ready(function () {
     $("#pizzaFlavor").html($("#flavors option:selected").val());
     $("#pizzaSize").html($("#size option:selected").val());
     $("#pizzaCrust").html($("#crust option:selected").val());
-    $("#pizzaTopping").html($(pizzaTopping.join(", ")));
+    // $("#pizzaTopping").html($(pizzaTopping.join(", ")));
     $("#totals").html(total);
 
     $("button#cart").click(function () {
@@ -173,7 +174,7 @@ $(document).ready(function () {
 
 
     });
-    // Checkout button
+    
     $("button#checkout").click(function () {
         $("button#checkout").hide();
         $("button#cart").hide();
@@ -183,7 +184,7 @@ $(document).ready(function () {
         $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
     });
 
-    // home delivery button
+    
     $("button#home").click(function (event) {
         $("#ptable").hide();
         $("#order h2").hide();
@@ -197,7 +198,7 @@ $(document).ready(function () {
         event.preventDefault()
     });
 
-    // when one clicks place order button
+    
     $("button#place").click(function (event) {
         event.preventDefault();
 
@@ -221,5 +222,5 @@ $(document).ready(function () {
             $("button#place").show();
         }
     });
-    event.preventDefault();
+    
 });
