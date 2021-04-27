@@ -39,6 +39,9 @@ Total.prototype.finalTotal = function () {
     return this.sizePrice * this.quantity + this.crustPrice;
 }
 $(document).ready(function () {
+    $(".images").hover(function(){
+        $(".texts", this).slideToggle(slow)
+    });
     $("button#make").click(function (event) {
         var flavors = $("#flavors option:selected").val();
         var pizzaSize = $("#size option:selected").val();
