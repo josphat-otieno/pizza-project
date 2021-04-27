@@ -39,7 +39,12 @@
     .text{
         font-size: x-large;
         font-family: 'Courier New', Courier, monospace;
+
     }
     #par{
         font-size: xx-large;
     }
+    #ptable, #deliveryPrice, #information, #form{
+        display: none;
+    }
+

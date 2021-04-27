@@ -96,7 +96,7 @@
                         <form id="frm">
                             <div class="form-group">
                                 <label for="flavour">Pick your flavour</label>
-                                <select name="flavour" id="flavours" class="form-control">
+                                <select name="flavour" id="flavours" class="form-control" required>
                                     <option value="vegtikka">Veg Tikka</option>
                                     <option value="chickentikka">Chicken Tikka</option>
                                     <option value="periperi">Peri-Peri Chicken</option>
@@ -117,7 +117,11 @@
                             </div><br>
                             <div class="form-group">
                                 <label for="crust">Select the type of crust</label>
+
+                                <select name="crust" id="crust-pizza" class="form-control">
+
                                 <select name="crust" id="crustPizza" class="form-control">
+
                                     <option value="glutten">Glutten Free @200</option>
                                     <option value="thin">Thin Crust @300</option>
                                     <option value="crispy">Crispy @350</option>
@@ -126,57 +130,82 @@
                                 </select>
                             </div>
                             <div class="form-group">
+
+                                <h2>Select the toppings you would like to have.</h2>
+                                <input type="checkbox" id="tomatoes" value="Tomatoes" name="toppings">
+                                <label for="tomatoes">Tomatoes</label> <br>
+                                <input type="checkbox" id="peperoni" value="Peperoni" name="toppings">
+                                <label for="peperoni">Peperoni</label><br>
+                                <input type="checkbox" id="ham" value="Ham and Pineapple" name="toppings">
+
                                 <h2>Select the toppings you would like at Sh.70 each</h2>
                                 <input type="checkbox" id="toppings" value="Tomatoes" name="tomatoes">
                                 <label for="tomatoes">Tomatoes</label> <br>
                                 <input type="checkbox" id="toppings" value="Peperoni" name="peperoni">
                                 <label for="peperoni">Peperoni</label><br>
                                 <input type="checkbox" id="toppings" value="Ham and Pineapple" name="ham">
+
                                 <label for="ham">Ham-and-Pineapple</label>
                             </div>
                             <div class="form-group">
                                 <label for="qty">QTY</label>
                                 <input type="number" name="qty" value="1" min="1" max="10" class="form-control">
                             </div>
+
+                            <button id="cart" class="btn btn-success">Add to cart</button>
+                            <button type="submit" id="make" class="btn btn-warning">Make your Order</button>
+
                             <!-- <button type="submit"  id="cart"  class="btn btn-success">Add to cart</button> -->
                             <button type="submit" id="proceed" class="btn btn-warning">Proceed</button>
+
                         </form>
                     </div>
                     <div class="col-md-6">
                         <div id="information">
                             <p>Your order will be processed and delivered to you shortly</p>
                         </div>
-                        <div class="choice">
-                            <h2 id="choice">Your Order Is:</h2>
+                        <div class="ordered">
+                            <h2 id="order">Your Order Is As follows:</h2>
                         </div>
-                        <table class="table table-sm text-small">
+                        <table id="ptable" class="table table-sm text-small">
 
                             <tr>
                                 <th>Pizza</th>
                                 <th>Size</th>
                                 <th>Crust</th>
                                 <th>Topping</th>
-                                <th>quantity</th>
                                 <th>Total</th>
                             </tr>
-                            <tbody id="our-order">
-
+                            <tbody id="your-order">
+                                <tr>
+                                    <td id="pizzaFlavor"></td>
+                                    <td id="pizzaSize"></td>
+                                    <td id="pizzaCrust"></td>
+                                    <td id="pizzaTopping"></td>
+                                    <td id="total"></td>
+                                </tr>
                             </tbody>
-                            <tfoot class="text-right">
-                                <td colspan="6"></td>
-                            </tfoot>
                         </table>
+
+                        <p id="pizzaTotal"></p>
+                         <p id="totalBill"></p>                      
+                        <p id="deliveryPrice">Delivery will cost is sh. 150</p>
+                        <p id="message"></p>
+                        <button class="btn btn-primary" id="checkout">Checkout</button>
+                        <button class="btn btn-primary" id="home">Delivery</button><br><br>
+
                         <p id="addedprice">Delivery will cost is sh. 250</p>
                         <p id="finallmessage"></p>
                         <button class="btn btn-primary" id="checkout">Checkout</button>
                         <button class="btn btn-primary" id="delivery">Home delivery?</button><br><br>
+
                         <div class="delivery">
-                            <form>
+                            <form id="form">
                                 <div class="form-group">
                                     <input type="text" id="name" class="form-control" placeholder="Name"><br>
                                     <input type="number" id="pnumber" class="form-control" placeholder="07xxxxxxxx"><br>
-                                    <input type="text" id="home" class="form-control" placeholder="Home address"><br>
-                                    <button type="submit" class="btn btn-warning">Place Order</button>
+                                    <input type="text" id="address" class="form-control" placeholder="Home address"><br>
+                                    <button id="place" class="btn btn-warning">Place Order</button>
                                 </div>
                             </form>
                         </div>
