@@ -76,6 +76,19 @@ $(document).ready(function(){
     var crust = $("#crustPizza").val();
     var toppings =$("#toppings").val();
     var flavors = $("#flavors").val();
-    
+    var size = $("#size").val()
+    var pizzaPrice = (sizePrice, crustPrice, toppingPrice);
+    var inputtedQuantity = parseInt($("#qty").val());
+     
+    var newDetails = new Deatils (flavor, size, crust, toppings, inputtedQuantity)
+    var total = new Total(sizePrice, crustPrice, toppingPrice, inputtedQuantity)
+    var newBill = newTotal.finalTotal();
+      var totalQuantity= parseInt($("total").val());
+      function calcTotal(){
+          var priceOnePizza = calculatePrice(sizePrice()) +
+          crustCalcPrice(crustPrice()) + toppingPrice();
+      }
+      var size = $("#size").find(":selected").val();
+      alert("your order is " + ", "+ size +' ,' + newDetails.selectedToppings + ' and ' + newDetails.selectedCrust +' '+"pizza"+". click ok to view your bill" );
 
 })
