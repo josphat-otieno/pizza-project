@@ -47,4 +47,12 @@
     #ptable, #deliveryPrice, #information, #form{
         display: none;
     }
+    .texts{
+        display: none;
+        background-color: blueviolet;
+    }
+    .images:hover{
+        opacity: 1;
+    }
+
 
