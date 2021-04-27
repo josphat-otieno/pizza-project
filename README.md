@@ -19,6 +19,17 @@
  5. Here is the live link to the website `https://josphat-otieno.github.io/pizza-project/`
 
 ## Behaviour Driven Development
+ The user sees a landing page that shos the logo of the shop and name. Scrolling down the user sees the types of crust and toppings.
+ 
+ The user sees the order section for ordering pizza.
+ inputs : pizza flavors, size of pizza , type of crust , toppings and quantity. 
+ 
+ outputs: order summary and the total cost for the pizza. If the customer chooses home delivery, the delivery fee is added tothe total cost.
+
+ inputs: Name of the customer, their phone number and location.
+
+ outputs: notification alerting the user the total cost including the delivery fee.
+
 
 The following technologies were used in building up the project:
 1. jQuery
