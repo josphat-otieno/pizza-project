@@ -184,7 +184,7 @@ $(document).ready(function () {
     });
 
     // home delivery button
-    $("button#home").click(function () {
+    $("button#home").click(function (event) {
         $("#ptable").hide();
         $("#order h2").hide();
         $("#home").slideDown(1000);
@@ -194,6 +194,7 @@ $(document).ready(function () {
         let deliveryFee = checkoutTotal + 200;
         console.log("You will pay sh. " + deliveryFee + " on delivery");
         $("#totalBill").append("Your bill plus delivery fee is: " + deliveryFee);
+        event.preventDefault()
     });
 
     // when one clicks place order button
