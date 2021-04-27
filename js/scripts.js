@@ -1,19 +1,19 @@
-constfrm =document.querySelector("#frm");
-frm.addEventListener('submit',function(event){
-    event.preventDefault()
-const fd = new FormData(frm)
- let order = {};
- let cart  = [];
-for (const key of fd.keys()){
-    if(fd.get(key).toString().length>0){
-        order[key] = fd.get(key).toString();
-    }
-}
-if(confirm("this pizza will be added to your cart")){
-cart.push(order);
-localStorage.setItem("cart", JSON.stringify(cart));
-}
-})
+// constfrm =document.querySelector("#frm");
+// frm.addEventListener('submit',function(event){
+//     event.preventDefault()
+// const fd = new FormData(frm)
+//  let order = {};
+//  let cart  = [];
+// for (const key of fd.keys()){
+//     if(fd.get(key).toString().length>0){
+//         order[key] = fd.get(key).toString();
+//     }
+// }
+// if(confirm("this pizza will be added to your cart")){
+// cart.push(order);
+// localStorage.setItem("cart", JSON.stringify(cart));
+// }
+// })
 
 var price, crustPrice, toppingPrice;
 var total = 0;
@@ -105,7 +105,7 @@ $(document).ready(function(){
       $("#pizzaFlavor").html($(".name option:selected").val());
       $("#pizzaSize").html( $("#size option:selected").val());
       $("#pizzaCrust").html($("#crust option:selected").val());
-      $("#pizzaTopping").html(pizzaTopping.join(", "));
+      $("#pizzaTopping").html($(pizzaTopping.join(", ")));
       $("#totals").html(total);
 
       $("button#cart").click(function(){
@@ -208,9 +208,9 @@ $(document).ready(function(){
   
         if ($("input#name").val() && $("input#pnumber").val() && $("input#address").val()!=""){
     
-          $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryFee);
+          $("#message").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryFee);
           $("#totalbill").hide();
-          $("#finallmessage").slideDown(1200);
+          $("#message").slideDown(1200);
         }
         else {
           alert("Please fill in the details for delivery!");
